@@ -1,14 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MentoriX</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    
-    This is the MentoriX homepage.
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MentoriX Home Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="nav-left">
+        <span class="mentorix">MentoriX</span>
+        <input type="text" class="search" placeholder="Search..." />
+      </div>
+      <div class="nav-right">
+        <i class="fas fa-plus"></i>
+        <i class="fas fa-bell"></i>
+        <div class="profile">
+          <img src="./assets/img/logo-psd.png" alt="Profile" />
+          <div class="profile-menu hidden">
+            <a href="#">profile</a>
+            <a href="#">Settings</a>
+            <a href="#">Sign out</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page layout -->
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <ul>
+            <li>
+                <a href="#"><i class="fas fa-compass"></i> Explore</a>
+            </li>
+          <!-- <li>
+            <a href="#"><i class="fas fa-home"></i> Home</a>
+          </li> -->
+          <li>
+            <a href="#"><i class="fas fa-code-branch"></i> Pull Requests</a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-exclamation-circle"></i> Codespace</a>
+          </li>
+         
+        </ul>
+
+        <!-- <div class="new-repo-box">
+        <p><strong>New Repository</strong></p>
+        <button>Create</button>
+      </div> -->
+      </aside>
+      <!-- Main timeline -->
+      <main class="main">
+        <h2>My Labs</h2>
+        <div class="activity-grid">
+          <div class="event">
+            <a href="./bugx-page.html">BugX</a> <strong>Fix-Bug Challenge</strong>
+            <span class="timestamp">click on link and go to the Challenge</span>
+          </div>
+          <div class="event">
+            <a href="#">FrontX</a> <strong>Front-End Challenge</strong>
+            <span class="timestamp">click on link and go to the Challenge</span>
+          </div>
+          <div class="event">
+            <a href="#">BackX</a> <strong>Back-End Challenge</strong>
+            <span class="timestamp">click on link and go to the Challenge</span>
+          </div>
+          <div class="event">
+            <a href="#">FuXXing Js</a> <strong>JS Challenge</strong>
+            <span class="timestamp">click on link and go to the Challenge</span>
+          </div>
+          <!-- <div class="event">
+          <strong>Ali</strong> commented on <a href="#">bug-report</a>
+          <span class="timestamp">click on link and go to the Challenge</span>
+        </div> -->
+          <!-- <div class="event">
+          <strong>Sara</strong> created a new repo <a href="#">new-lib</a>
+          <span class="timestamp">click on link and go to the Challenge</span>
+        </div> -->
+        </div>
+
+        <!-- News Box Start -->
+        <h2 style="margin-top: 20px;">My Posts</h2>
+        <sectio class="news-section">
+            
+          <div class="news-box">
+            <img
+              src="./assets/img/logo-black.png"
+              alt="News Image 1"
+              class="news-image"
+            />
+            <h3>News</h3>
+            <p>Add 30 Lib Js Function in Security ..</p>
+            <a href="#">read more...</a>
+          </div>
+
+          <div class="news-box">
+            <img
+              src="./assets/img/logo-black.png"
+              alt="News Image 1"
+              class="news-image"
+            />
+            <h3>News</h3>
+            <p>Add 30 Lib Js Function in Security ..</p>
+            <a href="#">read more...</a>
+          </div>
+
+          <div class="news-box">
+            <img
+              src="./assets/img/logo-black.png"
+              alt="News Image 1"
+              class="news-image"
+            />
+            <h3>News</h3>
+            <p>Add 30 Lib Js Function in Security ..</p>
+            <a href="#">read more...</a>
+          </div>
+          <div class="news-box">
+            <img
+              src="./assets/img/d3.png"
+              alt="News Image 1"
+              class="news-image"
+            />
+            <h3>News</h3>
+            <p>Add 30 Lib Js Function in Security ..</p>
+            <a href="#">read more...</a>
+          </div>
+          <div class="news-box">
+            <img
+              src="./assets/img/d3.png"
+              alt="News Image 1"
+              class="news-image"
+            />
+            <h3>News</h3>
+            <p>Add 30 Lib Js Function in Security ..</p>
+            <a href="#">read more...</a>
+          </div>
+          <div class="news-box">
+            <img
+              src="./assets/img/d3.png"
+              alt="News Image 1"
+              class="news-image"
+            />
+            <h3>News</h3>
+            <p>Add 30 Lib Js Function in Security ..</p>
+            <a href="#">read more...</a>
+          </div>
+        </section>
+        <!-- End News Box -->
+        <!-- slide Show Start -->
+        <!-- <section class="slider-container">
+          <div class="slider" id="slider">
+            <div class="slide">
+              <img src="./assets/img/logo-blue.png" alt="Article 1"/>
+              <h3>Understanding JavaScript Closures</h3>
+            </div>
+            <div class="slide">
+              <img src="./assets/img/logo-black.png"alt="Article 2"/>
+              <h3>CSS Grid vs Flexbox: Which One to Use?</h3>
+            </div>
+            <div class="slide">
+              <img src="./assets/img/logo-orange.png"alt="Article 3"/>
+              <h3>Mastering Async/Await in JavaScript</h3>
+            </div>
+          </div>
+        </section> -->
+        <!-- End Slide Show -->
+      </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2025 MentoriX Group – For academy only</p>
+        <div class="footer-links">
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">Security</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
     <script src="./assets/js/script.js"></script>
-</body>
+  </body>
 </html>
