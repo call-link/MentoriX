@@ -255,7 +255,14 @@ body {
   text-decoration: underline;
 }
 
-/* Start Bug Box 1090 Style */
+body {
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
 
 .buggy-module {
   background-color: #161b22;
@@ -264,9 +271,7 @@ body {
   border: 1px solid #30363d;
   width: 100%;
   max-width: 400px;
-  height: 300px;
-  overflow: hidden;
-  margin-top: 50px;
+  border-radius: 8px;
 }
 
 .buggy-module input {
@@ -276,6 +281,8 @@ body {
   margin-bottom: 10px;
   border-radius: 4px;
   border: 1px solid #ccc;
+  background-color: #0d1117;
+  color: white;
 }
 
 .buggy-module button {
@@ -284,10 +291,21 @@ body {
   padding: 10px 16px;
   border: none;
   cursor: pointer;
-  position: absolute;
+  border-radius: 4px;
+  width: 100%;
+  transition: background-color 0.3s ease;
 }
 
-/* Footer */
+.buggy-module button:hover {
+  background-color: #2ea043;
+}
+
+#message {
+  margin-top: 15px;
+  font-style: italic;
+  color: #58a6ff;
+}
+
 html,
 body {
   height: 100%;

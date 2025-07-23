@@ -16,7 +16,12 @@ document.getElementById("help-link").addEventListener("click", function (e) {
 document
   .getElementById("subscribe-form")
   .addEventListener("submit", function (e) {
-    e.prevent();
+    e.preventDefault(); // ← درستش کردیم
     const email = document.getElementById("email").value;
-    document.getElementById("message").innerText = `Subscribed with ${email}`;
+    const button = document.getElementById("subscribe-button");
+    const message = document.getElementById("message");
+
+    button.innerText = "Subscribed";
+    button.disabled = true;
+    message.innerText = `Saved: ${email}`;
   });
