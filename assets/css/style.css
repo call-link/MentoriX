@@ -11,7 +11,7 @@ body {
   color: #c9d1d9;
 }
 .mentorix {
-  font-weight: bold;
+  /* font-weight: bold;  */
 }
 /* Navbar */
 .navbar {
@@ -29,7 +29,7 @@ body {
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1px;
 }
 
 .search {
@@ -39,6 +39,7 @@ body {
   border-radius: 6px;
   color: white;
   width: 200px;
+  margin-left: 20px;
 }
 
 .nav-right {
