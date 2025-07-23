@@ -264,7 +264,7 @@ body {
   border: 1px solid #30363d;
   width: 100%;
   max-width: 400px;
-  height: 300px;
+  height: auto; 
   overflow: hidden;
   margin-top: 50px;
 }
@@ -284,10 +284,17 @@ body {
   padding: 10px 16px;
   border: none;
   cursor: pointer;
-  position: absolute;
+  border-radius: 4px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.buggy-module button:hover {
+  background-color: #2ea043;
 }
 
 /* Footer */
+
 html,
 body {
   height: 100%;
