@@ -264,9 +264,10 @@ body {
   border: 1px solid #30363d;
   width: 100%;
   max-width: 400px;
-  height: 300px;
+  height: auto; /* ← ارتفاع آزاد */
   overflow: hidden;
   margin-top: 50px;
+  position: relative;
 }
 
 .buggy-module input {
@@ -284,10 +285,18 @@ body {
   padding: 10px 16px;
   border: none;
   cursor: pointer;
-  position: absolute;
+  /* حذف position: absolute که باعث بیرون افتادن بود */
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
 
-/* Footer */
+/* Hover effect */
+.buggy-module button:hover {
+  background-color: #2ea043;
+}
+
 html,
 body {
   height: 100%;

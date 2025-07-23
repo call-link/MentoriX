@@ -16,7 +16,22 @@ document.getElementById("help-link").addEventListener("click", function (e) {
 document
   .getElementById("subscribe-form")
   .addEventListener("submit", function (e) {
-    e.prevent();
+    e.preventDefault(); // ← اصلاح این خط (بود: e.prevent())
     const email = document.getElementById("email").value;
-    document.getElementById("message").innerText = `Subscribed with ${email}`;
+    const message = document.getElementById("message");
+    message.innerText = `Subscribed with ${email}`;
+
+    // ایجاد پیام جدید زیر فرم (اگر تکراری نباشد)
+    let existing = document.getElementById("saved-email");
+    if (!existing) {
+      const savedEmail = document.createElement("p");
+      savedEmail.id = "saved-email";
+      savedEmail.innerText = `✅ This email has been saved: ${email}`;
+      message.insertAdjacentElement("afterend", savedEmail);
+    } else {
+      existing.innerText = `✅ This email has been saved: ${email}`;
+    }
+
+    // تغییر متن دکمه
+    this.querySelector("button").innerText = "Subscribed!";
   });
