@@ -264,7 +264,7 @@ body {
   border: 1px solid #30363d;
   width: 100%;
   max-width: 400px;
-  height: 300px;
+  height: 250px;
   overflow: hidden;
   margin-top: 50px;
 }
@@ -279,12 +279,12 @@ body {
 }
 
 .buggy-module button {
-  background-color: #238636;
+  background-color: #164c07;
   color: white;
   padding: 10px 16px;
   border: none;
   cursor: pointer;
-  position: absolute;
+  position: relative;
 }
 
 /* Footer */

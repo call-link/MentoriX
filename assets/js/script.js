@@ -16,7 +16,7 @@ document.getElementById("help-link").addEventListener("click", function (e) {
 document
   .getElementById("subscribe-form")
   .addEventListener("submit", function (e) {
-    e.prevent();
+  e.preventDefault();
     const email = document.getElementById("email").value;
     document.getElementById("message").innerText = `Subscribed with ${email}`;
   });
