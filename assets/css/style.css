@@ -12,6 +12,10 @@ body {
 }
 .mentorix {
   /* font-weight: bold;  */
+  text-decoration: none;
+  color: white;
+
+
 }
 /* Navbar */
 .navbar {
