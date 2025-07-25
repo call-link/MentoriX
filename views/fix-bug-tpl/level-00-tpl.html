@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Level 8</title>
-    <link rel="icon" type="image/png" href="../assets/img/logo-psd.png" />
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    <title>Level 0</title>
+    <link rel="icon" type="image/png" href="../../assets/img/logo-psd.png">
+    <link rel="stylesheet" href="../../assets/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -15,11 +15,7 @@
     <!-- Navbar -->
     <header class="navbar">
       <div class="nav-left">
-        <img
-          src="../assets/img/logo-psd.png"
-          alt="Profile"
-          style="width: 30px; height: 30px"
-        />
+        <img src="../../assets/img/logo-psd.png" alt="Profile" style="width: 30px;height: 30px;"/>
         <span class="mentorix">MentoriX</span>
         <input type="text" class="search" placeholder="Search..." />
       </div>
@@ -27,7 +23,7 @@
         <i class="fas fa-plus"></i>
         <i class="fas fa-bell"></i>
         <div class="profile">
-          <img src="../assets/img/logo-psd.png" alt="Profile" />
+          <img src="../../assets/img/logo-psd.png" alt="Profile" />
           <div class="profile-menu hidden">
             <a href="#">profile</a>
             <a href="#">Settings</a>
@@ -63,34 +59,31 @@
       </aside>
       <!-- Main timeline -->
       <main class="main">
-        <h2>Challenges map</h2>
+        <h2>Map</h2>
         <div class="activity-grid">
           <div class="event">
-            <a href="../bugx-tpl.html"
+            <a href="./index-tpl.html"
               ><i class="fa-solid fa-circle-arrow-left"></i
             ></a>
-            <strong>‌ I want to go back Leve 7</strong>
-            <span class="timestamp">Hmmm, ok</span>
+            <strong>‌Back to Level 0</strong>
+            <span class="timestamp">Hmmm, you're so weak that you want to let him go and come back? :))</span>
           </div>
           <div class="event">
-            <a href="#" id="help-link" style="font-weight: bold">Hint</a>
+            <a href="#" id="help-link" style="font-weight: bold;">Hint</a>
             <strong> for answer this challenge</strong>
             <span class="timestamp" id="help-message"
               >click on link and see answer Challenge</span
             >
           </div>
           <div class="event">
-            <strong>Go To Next Level</strong
-            ><a href="#"
-              ><i
-                class="fa-solid fa-circle-arrow-right"
-                style="margin-left: 60%"
-              ></i
-            ></a>
+            <div class="event-header">
+              <strong>Go to Level 01</strong>
+              <a href="./level-8-tpl.html">
+                <i class="fa-solid fa-circle-arrow-right"></i>
+              </a>
+            </div>
             <span class="timestamp">
-              <span style="color: #58a6ff"
-                >You do not have access to the next level !</span
-              >
+              <span>Can I give you a tissue to wipe your tears?</span>
             </span>
           </div>
           <!--<div class="event">
@@ -107,20 +100,31 @@
         </div> -->
         </div>
 
-        <!-- Start Bog Box 1070 HTML -->
+        <!-- Start Bog Box 1090 HTML -->
 
-        <h2 style="margin-top: 40px">My Bugs</h2>
+        <h2 style="margin-top: 40px">Run Challenge</h2>
         <span class="timestamp"
-          >To see the incomplete source code, search for 1070 .</span
+          >This page has 3 bugs and to see where the relevant code is, look in
+          code 1090.</span
         >
         <span class="timestamp"
-          >1 . The JavaScript code has a bug , The bug in this code is that it only displays the number 6 in the console, out of a large number</span
+          >1 . Look for a bug in html and css that causes the button to fall out
+          of the box</span
         >
         <span class="timestamp"
-          >2 . The correct mode is to display 1 to 5 in the console with an interval of 1 second .</span
+          >2 . Look in js for why it doesn't show your email after filling in
+          and clicking the button</span
         >
+        <section class="buggy-module">
+          <h2>Fix Bug The Email Form</h2>
+          <form id="subscribe-form">
+            <label for="email">Enter youre email and click on button</label>
+            <input type="emal" id="email" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
+          </form>
+          <p id="message"></p>
+        </section>
 
-        <p style="font-size: 50px;font-family: 'Courier New', Courier, monospace;margin-top: 40px;">$ Open your console to see </p>
         <!-- End Bug Box -->
       </main>
     </div>
@@ -138,16 +142,6 @@
       </div>
     </footer>
     <!-- End Footer -->
-
-    <!-- start js Bug Box 1070 -->
-    <script>
-      for (var i = 1; i <= 5; i++) {
-        setTimeout(function () {
-          console.log("Number:", i);
-        }, i * 1000);
-      }
-    </script>
-    <!-- end js Bog Box 1070 -->
-    <script src="../assets/js/script.js"></script>
+    <script src="../../assets/js/script.js"></script>
   </body>
 </html>

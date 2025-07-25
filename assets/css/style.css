@@ -335,3 +335,31 @@ body {
 .footer-links a:hover {
   color: #58a6ff;
 }
+
+
+
+/* style arrow icom next level */
+.event {
+  padding: 1rem;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  color: #c9d1d9;
+}
+
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.event-header a i {
+  font-size: 18px;
+  color: #58a6ff;
+  transition: transform 0.2s;
+}
+
+.event-header a i:hover {
+  transform: translateX(4px);
+}
