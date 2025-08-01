@@ -1,3 +1,27 @@
+
+<?php
+$conn = new mysqli("localhost", "root", "", "mentorix");
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+//echo "ok<br>";
+
+$sql = "SELECT * FROM users";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    $rows = $result->fetch_all(MYSQLI_ASSOC);
+   // print_r($rows);
+} else {
+  //  echo "No records found.";
+}
+
+$conn->close();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -163,19 +187,19 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Ali Rezaei</td>
-                  <td>ali@example.com</td>
-                  <td>2023-11-12</td>
+                  <td><?php echo $rows[0]['name'];?> </td>
+                  <td><?php echo $rows[0]['email'];?> </td>
+                  <td> <?php echo $rows[0]['date'];?> </td>
                 </tr>
                 <tr>
-                  <td>Maryam Karimi</td>
-                  <td>maryam@example.com</td>
-                  <td>2024-02-08</td>
+                  <td><?php echo $rows[1]['name'];?></td>
+                  <td><?php echo $rows[1]['email'];?></td>
+                  <td><?php echo $rows[1]['date'];?></td>
                 </tr>
                 <tr>
-                  <td>Hassan Jalali</td>
-                  <td>hassan@example.com</td>
-                  <td>2025-01-01</td>
+                  <td><?php echo $rows[2]['name'];?></td>
+                  <td><?php echo $rows[2]['email'];?></td>
+                  <td><?php echo $rows[2]['date'];?></td>
                 </tr>
               </tbody>
             </table>
@@ -202,3 +226,4 @@
     <script src="../../assets/js/script.js"></script>
   </body>
 </html>
+<?php $conn->close(); ?>
