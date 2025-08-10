@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
+  }
+  
+  .navbar {
+    background-color: #161b22;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #30363d;
+  }
+  .logo {
+    color: #58a6ff;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #161b22;
+    padding: 1rem;
+    border-radius: 6px;
+    text-align: center;
+    border: 1px solid #30363d;
+  }
+  .avatar {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  .main-content {
+    flex: 1;
+    background-color: #161b22;
+    padding: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .tab {
+    background: #21262d;
+    color: #c9d1d9;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .tab.active {
+    background: #58a6ff;
+    color: white;
+  }
+  
+  .tab-content {
+    display: none;
+  }
+  .tab-content.active {
+    display: block;
+  }
+  
+  .btn {
+    background-color: #238636;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  .btn:hover {
+    background-color: #2ea043;
+  }
+  
+  .list {
+    list-style: none;
+    padding: 0;
+  }
+  .list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #30363d;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  th, td {
+    border: 1px solid #30363d;
+    padding: 0.6rem;
+    text-align: left;
+  }
+  th {
+    background-color: #21262d;
+  }
+  .paid {
+    color: #2ea043;
+    font-weight: bold;
+  }
