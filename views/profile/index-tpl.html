@@ -1,88 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>MentoriX | Profile</title>
-  <link rel="stylesheet" href="../../assets/css/profile.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-</head>
-<body>
-  <header class="navbar">
-    <h1 class="logo">MentoriX</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <title>MentoriX | Profile</title>
+    <link rel="stylesheet" href="../../assets/css/profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <h1 class="logo">MentoriX</h1>
+    </header>
 
-  <div class="container">
-    <aside class="sidebar">
-      <img src="https://ui-avatars.com/api/?name=Ali+Rezai" alt="Avatar" class="avatar" />
-      <h2>Ali Rezai</h2>
-      <p>@alirezai</p>
-      <p><i class="fas fa-envelope"></i> ali@example.com</p>
-      <p><i class="fas fa-calendar"></i> Joined: 2024-11-10</p>
-    </aside>
+    <div class="container">
+      <aside class="sidebar">
+        <img
+          src="https://ui-avatars.com/api/?name=Ali+Rezai"
+          alt="Avatar"
+          class="avatar"
+        />
+        <h2>Ali Rezai</h2>
+        <p>@alirezai</p>
+        <p><i class="fas fa-envelope"></i> ali@example.com</p>
+        <p><i class="fas fa-calendar"></i> Joined: 2024-11-10</p>
+      </aside>
 
-    <main class="main-content">
-      <div class="tabs">
-        <button class="tab active" onclick="showTab('account')">Account</button>
-        <button class="tab" onclick="showTab('courses')">Courses</button>
-        <button class="tab" onclick="showTab('payments')">Payments</button>
-      </div>
+      <main class="main-content">
+        <div class="tabs">
+          <button class="tab active" onclick="showTab('account')">
+            Account
+          </button>
+          <button class="tab" onclick="showTab('courses')">Courses</button>
+          <button class="tab" onclick="showTab('payments')">Payments</button>
+          <button class="tab" onclick="showTab('LabsStatus')">Labs Status</button>
+        </div>
 
-      <section id="account" class="tab-content active">
-        <h3>Account Info</h3>
-        <p><strong>Name:</strong> Ali Rezai</p>
-        <p><strong>Username:</strong> alirezai</p>
-        <p><strong>Email:</strong> ali@example.com</p>
-        <button class="btn">Edit Profile</button>
-      </section>
+        <section id="account" class="tab-content active">
+          <h3>Account Info</h3>
+          <p><strong>Name:</strong> Ali Rezai</p>
+          <p><strong>Username:</strong> alirezai</p>
+          <p><strong>Email:</strong> ali@example.com</p>
+          <button class="btn">Edit Profile</button>
+        </section>
 
-      <section id="courses" class="tab-content">
-        <h3>Purchased Courses</h3>
-        <ul class="list">
-          <li>✅ Advanced JavaScript (2025)</li>
-          <li>✅ PHP & MySQL Masterclass</li>
-          <li>🚫 React Frontend - <em>Access Denied</em></li>
-        </ul>
-      </section>
+        <section id="courses" class="tab-content">
+          <h3>Purchased Courses</h3>
+          <ul class="list">
+            <li>✅ Advanced JavaScript (2025)</li>
+            <li>✅ PHP & MySQL Masterclass</li>
+            <li>🚫 React Frontend - <em>Access Denied</em></li>
+          </ul>
+        </section>
 
-      <section id="payments" class="tab-content">
-        <h3>Payment History</h3>
-        <table>
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Course</th>
-              <th>Amount</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2025-08-01</td>
-              <td>JavaScript Bootcamp</td>
-              <td>$29.99</td>
-              <td><span class="paid">Paid</span></td>
-            </tr>
-            <tr>
-              <td>2025-07-10</td>
-              <td>PHP & MySQL</td>
-              <td>$24.99</td>
-              <td><span class="paid">Paid</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </main>
-  </div>
+        <section id="payments" class="tab-content">
+          <h3>Payment History</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Course</th>
+                <th>Amount</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2025-08-01</td>
+                <td>JavaScript Bootcamp</td>
+                <td>$29.99</td>
+                <td><span class="paid">Paid</span></td>
+              </tr>
+              <tr>
+                <td>2025-07-10</td>
+                <td>PHP & MySQL</td>
+                <td>$24.99</td>
+                <td><span class="paid">Paid</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section id="LabsStatus">
+          <p>this is lab status</p>
+        </section>
+      </main>
+    </div>
 
-  <script>
-    function showTab(id) {
-      document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
-      document.querySelectorAll(".tab").forEach(b => b.classList.remove("active"));
-      document.getElementById(id).classList.add("active");
-      event.target.classList.add("active");
-    }
-  </script>
-</body>
+    <script>
+      function showTab(id) {
+        document
+          .querySelectorAll(".tab-content")
+          .forEach((c) => c.classList.remove("active"));
+        document
+          .querySelectorAll(".tab")
+          .forEach((b) => b.classList.remove("active"));
+        document.getElementById(id).classList.add("active");
+        event.target.classList.add("active");
+      }
+    </script>
+  </body>
 </html>
